@@ -16,7 +16,7 @@ Console.WriteLine("Please enter second number:");
 string secondNumber = Console.ReadLine();
 int secondNumberInt = int.Parse(secondNumber);
 
-Console.WriteLine(firstNumberInt + secondNumberInt);
+Console.WriteLine("The sum is: " + (firstNumberInt + secondNumberInt));
 
 //---------------------- Task 2 --------------------------------
 
@@ -26,7 +26,7 @@ string firstName = Console.ReadLine();
 Console.WriteLine("Please enter your last name:");
 string lastName = Console.ReadLine();
 
-Console.WriteLine(lastName + " " + firstName);
+Console.WriteLine("The full name is: " + lastName + " " + firstName);
 
 //---------------------- Task 3 --------------------------------
 
@@ -34,7 +34,7 @@ string sentence = "Sentense to parse this word.";
 Console.WriteLine(sentence);
 
 string substr1 = sentence.Substring(0, 8);
-Console.WriteLine(substr1.ToUpper());
+Console.WriteLine("The first word to parse in uppercase: " + substr1.ToUpper());
 
 
 //---------------------- Task 4 --------------------------------
@@ -47,7 +47,7 @@ double pi = Math.PI;
 
 double area = radiusDoub * radiusDoub * pi;
 
-Console.WriteLine(area.ToString("0.##"));
+Console.WriteLine("Radius is equal to: " + area.ToString("0.##"));
 
 //---------------------- Task 5 --------------------------------
 
@@ -62,8 +62,9 @@ if (int.TryParse(myAgeS, out myAgeI))
     Console.WriteLine("Valid age input:" + myAgeI.ToString());
 
 }
-    else {
+else
+{
 
-        Console.WriteLine("Invalid age entered!");
+    Console.WriteLine("Invalid age entered!");
 
 }
